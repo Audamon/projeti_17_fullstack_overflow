@@ -7,6 +7,7 @@ import * as getNotAnsweredQuestionsController from './Controllers/getNotAnswered
 import * as answerQuestionController from './Controllers/answerQuestion';
 import * as upVoteQuestionController from './Controllers/upVoteQuestion';
 import * as downVoteQuestionController from './Controllers/downVoteQuestion';
+import * as getRankingController from './Controllers/getRanking';
 
 const app = express();
 app.use(cors());
@@ -18,8 +19,8 @@ app.get('/questions', getNotAnsweredQuestionsController.getNotAnsweredQuestions)
 app.post('/questions/:id', answerQuestionController.answerQuestion);
 app.put('/questions/:id/upvote', upVoteQuestionController.upVoteQuestion);
 app.put('/questions/:id/downvote', downVoteQuestionController.downVoteQuestion);
-
 app.post('/users', createUserController.createUser);
+app.get('/ranking', getRankingController.getRanking);
 
 
 export default app;
