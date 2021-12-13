@@ -1,8 +1,9 @@
 export interface Question{
+    id?: number;
     question: string;
     student: string;
     class: string;
-    tags: string
+    tags: string;
     answered?: boolean;
     submitAt?: string;
     answeredAt?: string;
