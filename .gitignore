@@ -4,3 +4,7 @@
 package-lock.json
 
 /build
+.env
+.env.dev
+jest.config.js
+/test
