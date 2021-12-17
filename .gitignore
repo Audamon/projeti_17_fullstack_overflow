@@ -1,4 +1,4 @@
-/node_module
+/node_modules
 .eslintrc.json
 .prettierrc.json
 package-lock.json
